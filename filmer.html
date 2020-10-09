@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BioBio - filmer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
+
+
+  <!--CSS Stylesheets-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/filmer.css">
+
+  <!-- tooltip popup import -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/animations/scale.css" />
+  <!-- Google api -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- HEADER  & NAVBAR -->
+  <header>
+    <!-- NAVBAR (DESKTOP) -->
+    <nav id="main-nav">
+      <a href="filmer.html">Filmer</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Boka</a>
+        <div class="dropdown-content">
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"><a href="#">Film</a>
+              <br><br>
+              <select
+                style="width: 150px;height: 30px; border-radius: 10px; background-color: black;border: 1px solid white; color: white; padding-left: 5px;">
+                <option>JUMANJI 2</option>
+                <option>JOKER</option>
+                <option>FROST II</option>
+                <option>STAR WARS: The Rise of Skywalker</option>
+                <option>PARASIT</option>
+                <option>21 BRIDGES</option>
+                <option>Sune:Best Man</option>
+              </select>
+            </li>
+            <li class="dropdown-submenu"><a href="#">Antal</a>
+              <br><br>
+              <select
+                style="width: 50px;height: 30px; border-radius: 10px; background-color: black;border: 1px solid white; color: white; padding-left: 5px;">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+            </li>
+            </li>
+            <li class="dropdown-submenu calender"><a href="#">Välj Datum</a><br><br>
+
+              <div class="month" style="padding: 40px;padding-left: 20px;">
+                <ul>
+                  <li class="prev">&#10094;</li>
+                  <li class="next">&#10095;</li>
+                  <li>
+                    December<br>
+                    <span style="font-size:18px">2019</span>
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+              </ul>
+
+              <ul class="days">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li><span class="active">19</span></li>
+                <li>20</li>
+                <li><span class="active">21</span</li> <li>22</li>
+                <li><span class="active">23</span></li>
+                <li><span class="active">24</span></li>
+                <li>25</li>
+                <li><span class="active">26</span></li>
+                <li>27</li>
+                <li>28</li>
+                <li><span class="active">29</span></li>
+                <li>30</li>
+                <li><span class="active">31</span></li>
+              </ul>
+            </li>
+            </li>
+
+
+
+            <li class="dropdown-submenu"><a href="#">Välj Plats</a><br><br>
+              <div class="box">
+                <div class="sbox1"></div>
+                <div class="sbox2"></div>
+                <div class="sbox3"></div>
+                <div class="sbox4"></div>
+                <div class="sbox5"></div>
+                <div class="sbox6"></div>
+                <div class="sbox7"></div>
+                <div class="sbox8"></div>
+                <div class="sbox9"></div>
+                <div class="sbox10"></div>
+                <div class="sbox11"></div>
+                <div class="sbox12"></div>
+                <div class="sbox13"></div>
+                <div class="sbox14"></div>
+                <div class="sbox15"></div>
+                <div class="sbox16"></div>
+                <div class="sbox17"></div>
+                <div class="sbox18"></div>
+                <div class="sbox19"></div>
+                <div class="sbox20"></div>
+                <div class="sbox21"></div>
+                <div class="sbox22"></div>
+                <div class="sbox23"></div>
+                <div class="sbox24"></div>
+              </div>
+            </li>
+          </ul>
+          <br><br><br><br>
+          <div style="width: 50px; height:10px; display: flex; justify-content: flex-end;">
+
+            <!--<button style="background-color: black; color: black; display: hidden;"></button>-->
+          </div>
+
+          <div>
+            <button type="button"
+              style="margin-left: auto; margin-right: auto;  display: flex; text-align: center; justify-content: center; width: 350px; height: 25px; margin-bottom: 2px; background-color: #ab5a54;color: white;border-radius: 10px; border: none;"><strong>Boka</strong></button>
+          </div>
+
+        </div>
+      </div>
+      <a href="om_oss.html"> Om oss </a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/popcorn.svg" alt="logo">
+          <h1>BioBio</h1>
+        </a>
+      </div>
+
+      <div class="city-dropdown">
+        <a onclick="dropdownCities()" class="city-dropbtn">Stockholm</a>
+        <div id="myCityDropdown" class="city-dropdown-content">
+          <a href="#">Göteborg</a>
+          <a href="#">Malmö</a>
+          <a href="#">Uppsala</a>
+        </div>
+      </div>
+
+      <div class="log-in">
+        <div class="login-dropdown">
+          <a onclick="dropdownLogin()" class="login-dropbtn">
+            <img src="assets/account.svg" alt="logga in">
+            Logga in
+          </a>
+          <div id="myLoginDropdown" class="login-dropdown-content">
+            <div class="login-box">
+              <input type="text" placeholder="E-post" />
+              <input type="text" placeholder="Lösenord" />
+              <a href="#"><span>Glömt lösenord?</span></a>
+              <button class="login-btn"> Logga in </button>
+              <div class="form-bottom">
+                <p style="font-size: 17px; color: #333;">Inget konto? </p>
+                <a href="#">
+                  <p style="color: #ff0000; font-size: 15px;">Bli medlem</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search icon -->
+      <div class="search-box">
+        <svg onClick="openSearch()" width="25" height="25" viewBox="0 0 42 40" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path id="search-btn"
+            d="M41.2571 36.5725L31.2156 27.108C33.7047 24.2478 35.2049 20.5841 35.2049 16.591C35.2049 7.43181 27.32 0 17.6025 0C7.87636 0 0 7.43181 0 16.591C0 25.7502 7.87636 33.182 17.6025 33.182C21.839 33.182 25.7175 31.776 28.7521 29.43L38.7936 38.8865C39.4755 39.5292 40.5752 39.5292 41.2571 38.8865C41.939 38.2517 41.939 37.2073 41.2571 36.5725ZM17.6025 29.8799C9.81987 29.8799 3.49492 23.9184 3.49492 16.591C3.49492 9.26365 9.81987 3.2941 17.6025 3.2941C25.3765 3.2941 31.71 9.26365 31.71 16.591C31.71 23.9184 25.3765 29.8799 17.6025 29.8799Z"
+            fill="#fff" />
+        </svg>
+      </div>
+    </nav>
+
+
+    <!-- HAMBURGER (MOBILE) -->
+    <div id="hamburger" onClick="openHamburger()" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="hamburger-menu">
+      <span>
+        <a href="film.html">Filmer</a>
+      </span>
+      <span>
+        <a href="#"> Boka </a>
+      </span>
+      <span>
+        <a href="om_oss.html"> Om oss </a>
+      </span>
+      <span>
+        <a href="#"> Logga in </a>
+      </span>
+      <span>
+        <a href="#"> Biografer</a>
+      </span>
+      <span>
+        <a href="#">Nyheter</a>
+      </span>
+      <span>
+        <a href="#">Medlemskap</a>
+      </span>
+      <span>
+        <a href="#">Event</a>
+      </span>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <nav id="search-nav">
+      <div class="src-icon">
+        <svg onClick="searchClick()" width="25" height="25" viewBox="0 0 42 40" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M41.2571 36.5725L31.2156 27.108C33.7047 24.2478 35.2049 20.5841 35.2049 16.591C35.2049 7.43181 27.32 0 17.6025 0C7.87636 0 0 7.43181 0 16.591C0 25.7502 7.87636 33.182 17.6025 33.182C21.839 33.182 25.7175 31.776 28.7521 29.43L38.7936 38.8865C39.4755 39.5292 40.5752 39.5292 41.2571 38.8865C41.939 38.2517 41.939 37.2073 41.2571 36.5725ZM17.6025 29.8799C9.81987 29.8799 3.49492 23.9184 3.49492 16.591C3.49492 9.26365 9.81987 3.2941 17.6025 3.2941C25.3765 3.2941 31.71 9.26365 31.71 16.591C31.71 23.9184 25.3765 29.8799 17.6025 29.8799Z"
+            fill="#fff" />
+        </svg>
+      </div>
+      <input id="search-input" type="text" placeholder="Sök på filmer, genres etc. " />
+      <button class="close-btn" onClick="closeSearch()">&#10005; </button>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT-->
+
+  <div class="curtain">
+
+  </div>
+
+  <div class="content">
+    <h2 class="custom">Filmer</h2>
+    <div class="movies">
+      <select class="filter-menu">
+        <!--Filtrera-->
+        <option value="" selected hidden>Filtrera filmer</option>
+        <option value="1">Barn filmer</option>
+        <option value="2">Action</option>
+        <option value="3">Sci-fi</option>
+        <option value="4">Äventyr</option>
+        <option value="5">Skräck</option>
+      </select>
+    </div>
+    <article>
+      <!--Filmer-->
+      <div>
+        <img id="jumanji" src="assets/movies/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          The next level
+        </p>
+      </div>
+      <div>
+        <img id="joker" src="assets/movies/joker.jpg" alt="joker" />
+        <p class="custom">
+          Joker<br />
+
+        </p>
+      </div>
+      <div>
+        <img id="jul" src="assets/movies/jul.jpg" alt="Jag kommer hem igen till jul" />
+        <p class="custom">
+          Jag kommer hem igen till jul
+        </p>
+      </div>
+      <div>
+        <img id="porträtt" src="assets/movies/portrait.jpg" alt="Porträtt av en kvinna i brand" />
+        <p class="custom">
+          Porträtt av en kvinna i brand
+        </p>
+      </div>
+      <div>
+        <img id="starwars" src="assets/movies/starwars.jpg" alt="Star Wars Rise of Skywalker" />
+        <p class="custom">
+          Star Wars: The Rise of Skywalker
+        </p>
+      </div>
+      <div>
+        <img id="aladdin" src="assets/movies/aladdin.jpg" alt="Aladdin" />
+        <p class="custom">
+          Aladdin
+        </p>
+      </div>
+      <div>
+        <img id="dora" src="assets/movies/dora.jpg" alt="Dora and the Lost City" />
+        <p class="custom">
+          Dora and the Lost City
+        </p>
+      </div>
+      <div>
+        <img id="addams" src="assets/movies/addams.jpg" alt="Familjen Addams" />
+        <p class="custom">
+          Familjen Addams
+        </p>
+      </div>
+      <div>
+        <img id="maleficent" src="assets/movies/maleficent.jpg" alt="Maleficent 2: Ondskans härskarinna" />
+        <p class="custom">
+          Maleficent 2: <br />
+          Ondskans härskarinna
+        </p>
+      </div>
+      <div>
+        <img id="midway" src="assets/movies/midway.jpg" alt="Midway" />
+        <p class="custom">
+          Midway
+        </p>
+      </div>
+      <div>
+        <img id="totoro" src="assets/movies/totoro.jpg" alt="Totoro" />
+        <p class="custom">
+          Min granne Totoro
+        </p>
+      </div>
+      <div>
+        <img id="mamma" src="assets/movies/ring_mamma.jpg" alt="Ring mamma!" />
+        <p class="custom">
+          Ring mamma!
+        </p>
+      </div>
+      <div>
+        <img id="panipat" src="assets/movies/panipat.jpg" alt="Panipat" />
+        <p class="custom">
+          Panipat
+        </p>
+      </div>
+      <div>
+        <img id="toystory" src="assets/movies/toystory.jpg" alt="Toy story 4" />
+        <p class="custom">
+          Toy Story 4
+        </p>
+      </div>
+      <div>
+        <img id="corgi" src="assets/movies/corgi.jpg" alt="Drottningens corgi" />
+        <p class="custom">
+          Drottningens corgi
+        </p>
+      </div>
+    </article>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-wrapper">
+      <div class="foo">
+        <h5>BioBio</h5>
+        <span>Kontakta oss</span>
+        <span>Biljetter</span>
+        <span>Filmer & trailers</span>
+        <span>Nyheter</span>
+      </div>
+      <div class="foo-icon-container">
+        <div class="social-media">
+          <img src="assets/facebook.svg" style="height: 50px; width: 50px;">
+          <img src="assets/instagram.svg" style="height: 50px; width: 50px;">
+          <img src="assets/whatsapp.svg" style="height: 50px; width: 50px;">
+        </div>
+        <div class="newsletter">
+          <span style="margin-bottom: 0px; color:#FFD6D2;">Nyhetsbrev</span>
+          <input class="email-input" placeholder="email@adress.com" type="email">
+          <button> Registrera </button>
+        </div>
+        <div class="euro-cinema">
+          <a href="https://www.europa-cinemas.org/en">
+            <img src="assets/europa-cinema.jpg">
+          </a>
+        </div>
+        <div class="copy-right">
+          <span>Blitz Solution AB &#9400; 2019</span>
+        </div>
+        <button id="christmas-btn" onclick="giveMeChristmas()"></button>
+      </div>
+      <div class="foo">
+        <h5>Kundservice</h5>
+        <span>Logga in</span>
+        <span>Bli medlem</span>
+        <span>FAQ</span>
+        <a href="giftcard.html">Presentkort</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPTS -->
+  <script src="js/menu.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/snowfall.js"></script>
+  <script src="js/christmas.js"></script>
+  <!--Tippy.js tooltip scriptCDN and responsive menu js-->
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
+  <script src="js/popup.js"></script>
+
+
+</body>
+
+
+</html>

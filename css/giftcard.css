@@ -1,0 +1,54 @@
+.top-section {
+  background-image: url("../assets/christmas-hero.jpg");
+}
+
+.hero {
+  height: 500px;
+  width: 100%;
+  background: linear-gradient( rgba(241, 103, 103, 103), rgba(231, 74, 74, 0), rgb(170, 40, 40));
+}
+
+#gift-card-section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px;
+  align-items: center;
+}
+
+.gift-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.article-card {
+  max-width: 500px;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.article-img {
+  height: auto !important;
+  width: 100%;
+}
+
+.article-caption {
+  line-height: 1.5;
+}
+
+.gift-card-btn {
+  background: red;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1140px) {
+
+  .gift-card-container {
+      justify-content: center;
+  }
+}
